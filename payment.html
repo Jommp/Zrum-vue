@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+    
+    <!-- Load polyfills to support older browsers -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+    
+    <!-- Load Vue followed by BootstrapVue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--for production:
+      <script src="https://unpkg.com/vue@latest/dist/vue.min.js"></script>
+    -->
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/responsive/general-responsive.css">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="stylesheet" href="./css/responsive/main-styles-responsive.css">
+    <link rel="stylesheet" href="./css/main-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+ 
+    <script src="https://unpkg.com/vue-select@latest"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vue-select@latest/dist/vue-select.css">
+
+    <title>Agency Name | Booking Step 2: User Data and Payment</title>
+  </head>
+  <body>
+    <div class="main-container" id="booking2">
+      <payment></payment>
+    </div>
+
+    <script src="./scripts/content.js"></script>
+
+    <script src="./components/forms/payment-form.js"></script>
+
+    <script src="./components/general/selector.js"></script>
+    <script src="./components/general/color-box.js"></script>
+
+    <script src="./components/layout/institution-logos-banner.js"></script>
+    <script src="./components/layout/book-withus-section.js"></script>
+    <script src="./components/layout/main-header.js"></script>
+    <script src="./components/layout/main-footer.js"></script>
+    <script src="./components/layout/booking-summary.js"></script>
+
+    <script src="./components/pages/booking/Payment.js"></script>
+
+    <script>
+      Vue.component('v-select', VueSelect.VueSelect);
+
+      new Vue({
+        el: '#booking2',
+        components: { 'payment': Payment }
+      });
+    </script>
+    
+  </body>
+</html>
