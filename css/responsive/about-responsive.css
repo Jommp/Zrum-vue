@@ -1,0 +1,118 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  /* <---------- history section 576px ----------> */
+  
+
+  /* <---------- members section 576px ----------> */
+
+  .members {
+    max-width: 550px;
+  }
+
+  .member-box {
+    max-width: 250px;
+    flex-flow: row nowrap;
+  }
+
+  .member-box img {
+    max-width: 115px;
+    max-height: 115px;
+  }
+
+  .member-info h2 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  /* <---------- sponsors section 576px ----------> */
+
+  #sponsors {
+    margin-top: 16px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  /* <---------- history section 768px ----------> */
+
+  /* .history-container {
+    flex-flow: row-reverse;
+  } */
+
+  .history-img{
+    width: 60% !important;
+  }
+
+  .history-text {
+    height: 300px;
+    overflow: hidden;
+    text-align: left !important;
+    width: 40%;
+  }
+
+  /* <---------- members section 768px ----------> */
+
+  .members {
+    min-width: 100%;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .member-box {
+    max-width: 160px;
+    flex-flow: column nowrap;
+  }
+
+  .member-box img {
+    max-width: 155px;
+    max-height: 156px;
+  }
+
+  .member-info h2 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  /* <---------- sponsors section 768px ----------> */
+
+  #sponsors {
+    margin-top: 10px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  /* <---------- history section 992px ----------> */
+
+  .history{
+    width: 90%;
+  }
+
+  .history-text {
+    height: auto;
+    margin-bottom: 8%;
+    max-width: 430px;
+    text-align: left;
+  }
+
+  /* <---------- members section 768px ----------> */
+  
+  .member-info h2{
+    font-size: 14px;
+  }
+
+  /* <---------- sponsors section 992px ----------> */
+
+  #sponsors {
+    margin-top: 0;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

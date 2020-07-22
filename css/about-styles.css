@@ -1,0 +1,84 @@
+/* <---------- title main section ----------> */
+
+.title-main {
+  background-color: #dcdcdc;
+}
+
+.title-main h2 {
+  color: #2379ac;
+}
+
+.title-main span {
+  color: #2379ac;
+}
+
+/* <---------- history section ----------> */
+
+/* .history-container {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.history h2 {
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.history-img {
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-img {
+  bottom: 44%;
+  right: 52%;
+
+  width: 45%;
+}
+
+.big-img {
+  width: 80%;
+  
+}
+
+.history p {
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* <---------- members section ----------> */
+
+.members {
+  max-width: 420px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.member-box {
+  max-width: 168px;
+
+  flex-flow: column;
+  align-items: center;
+}
+
+.member-box h2 {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.member-box p {
+  font-size: 13px;
+  line-height: 19px;
+  max-height: 80px;
+  overflow: hidden;
+}
+
+/* <---------- sponsors section ----------> */
+
+#sponsors {
+  margin-top: 0;
+}
+

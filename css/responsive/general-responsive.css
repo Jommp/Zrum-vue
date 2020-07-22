@@ -1,0 +1,35 @@
+/* SM */
+@media (min-width: 576px) {  
+  .form-area .subtitle{
+    color: #ffa025;
+  }
+}
+
+/* MD */
+@media (min-width: 768px) {
+  
+  .summary-content h1{
+    border-bottom: 1px solid #ffa025;
+  }
+  .summary-content .total-md{
+    border-top: 1px solid #ffa025;
+  }
+}
+
+/* LG */
+@media (min-width: 992px) {
+  .summary-content h1{
+    font-size: 24px;
+  }
+  .large-form #submit-btn{
+    max-width: 420px;
+  }
+  .summary-content .group > p.item-total{
+    width: 20%;
+  }
+}
+
+/* XL */
+@media (min-width: 1200px) { 
+}
+

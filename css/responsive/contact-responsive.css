@@ -1,0 +1,168 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  /* <---------- main section 576px ----------> */
+  main {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  /* <---------- form section 576px ----------> */
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-form form textarea {
+    height: 245px;
+  }
+
+  /* <---------- aside section 576px ----------> */
+
+  aside p {
+    text-align: left;
+  }
+
+  aside hr {
+    width: 100%;
+  }
+
+  .others-seen-container {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .others-seen-info p {
+    text-align: center;
+  }
+
+  .others-seen-hidden-md {
+    display: none;
+  }
+
+  /* <---------- information section 576px ----------> */
+
+  .information {
+    width: 45%;
+  }
+
+  .info-box {
+    height: 121px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  /* <---------- main section 768px ----------> */
+
+
+  .title-main span {
+    display: block;
+
+    color: #fff;
+    font-size: 10px;
+    height: 12px;
+    line-height: 15px;
+
+    position: absolute;
+    left: 0;
+  }
+
+  /* .contact-form {
+    width: 100%;
+  } */
+
+  /* <---------- aside section 768px ----------> */
+
+  aside {
+    order: 1;
+  }
+
+  aside hr {
+    width: 100%;
+  }
+
+  .others-seen-box {
+    height: 100px;
+
+    justify-content: space-between;
+  }
+
+  .others-seen-box img {
+    width: 119px;
+    height: 78px;
+  }
+
+  .others-seen-hidden-md {
+    display: flex;
+  }
+
+  /* <---------- information section 768px ----------> */
+
+  .information {
+    margin-top: 4.8rem !important;
+
+    order: 2;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  /* <---------- main section ----------> */
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  /* <---------- form section 992px ----------> */
+  .contact-form {
+    order: 2;
+  }
+
+  .contact-form form button{
+    width: 60%;
+  }
+
+  /* <---------- aside section 992px ----------> */
+
+  
+  
+  .others-seen-box {
+    justify-content: center;
+  }
+
+  /* <---------- information section 768px ----------> */
+
+  .information {
+    max-width: 100%;
+    min-width: 100%;
+
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .info-box {
+
+    width: 30%;
+    /* max-width: 260px;
+    min-width: 260px; */
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* <---------- main section 1200px ----------> */
+
+  main {
+    justify-content: space-around;
+  }
+  
+  /* <---------- footer section 1200px ----------> */
+
+  .certified {
+    left: 50%;
+  }
+}

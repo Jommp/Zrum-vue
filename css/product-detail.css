@@ -1,0 +1,67 @@
+/***** Booking: Step 1 *****/
+.product-title {
+  color: #ffa025;
+  font-weight: 600;
+  font-size: 24px;
+}
+.product-title > span{
+  font-size: 20px;
+  font-weight: 500;
+  color: #2379ac;
+  margin-left: 0.5rem;
+}
+.product-prices p{
+  font-size: 18px !important;
+}
+.product-prices .discount{
+  color: #ff0000;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.product-specifications .accordion_card{
+  border: none;
+}
+.product-specifications .accordion_card .card-body{
+  padding-left: 0;
+  padding-right: 0;
+}
+.product-specifications .card_header{
+  background-color: transparent;
+  border-bottom: 1px solid var(--yellow-light);
+}
+.product-specifications .card_header > a{
+  background-color: transparent;
+  border: none;
+  color: #2379ac;
+  text-align: left;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-specifications .card_header > a{
+  font-weight: 600;
+}
+.product-specifications .card_header > a:hover,
+.product-specifications .card_header > a:focus,
+.product-specifications .card_header > a:active {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.product-specifications .card_header > a:hover > .fas,
+.product-specifications .card_header > a:focus > .fas,
+.product-specifications .card_header > a:active > .fas {
+ color: #ffa025;
+}
+.product-specifications .card_header > a.collapsed >.fas{
+  transform: rotate(180deg);
+}
+.product-specifications p{
+  color: #2379ac;
+  font-size: 14px;
+}
+.product-specifications p.description{
+  font-size: 16px;
+}
+/***** ./Booking Step 1 *****/

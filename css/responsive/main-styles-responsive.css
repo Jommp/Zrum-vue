@@ -1,0 +1,542 @@
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  /* <---------- header section 576px ----------> */
+
+  .banner-image {
+    background-image: url('../../img/imgZrum/header-sm.png');
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* <---------- exclusive packages section 576px ----------> */
+
+  .pack1-img {
+    width: 533px;
+  }
+
+  .container-packs {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pack2,
+  .pack3 {
+    width: 48%;
+    margin: 5px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .pack-sm {
+    display: flex;
+  }
+
+  /* <---------- aside section 576px ----------> */
+
+  .others-seen-container{
+    max-width: 533px;
+  }
+
+  .others-seen-box {
+    width: 238px;
+    height: 120px;
+  }
+
+  .others-seen-box img {
+    height: 95px;
+    width: 205px;
+  }
+
+  .others-seen-info {
+    width: 205px;
+
+    bottom: 18px;
+  }
+
+  .benefits {
+    margin-top: 12px;
+  }
+
+  /* <---------- new experiences section 576px ----------> */
+
+  /* <---------- newsletter and recommendations section 576px ----------> */
+
+  .newsletter form input {
+    width: 287px !important;
+  }
+
+  .newsletter p {
+    width: 372px !important;
+  }
+
+  /* <---------- footer section 576px ----------> */
+
+  footer ul li {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .footer-box h2 {
+    font-size: 16px;
+
+  }
+
+  .services {
+    order: 1;
+  }
+
+  .destinations {
+    order: 2;
+  }
+
+  .payment-options {
+    order: 4;
+  }
+
+  .certified {
+    order: 5;
+
+    top: 50%;
+    left: 47%;
+  }
+
+  .social-networks {
+    order: 3;
+
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+
+  /* .language-currency {
+    order: 6;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+  } */
+
+  .language-currency select {
+    height: 35px;
+    width: 76px;
+  }
+
+  .footer-menu {
+    order: 7;
+  }
+
+  .f-menu-container {
+    justify-content: center;
+  }
+
+  .f-menu-container li {
+    font-size: 12px;
+  }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  /* <---------- header section 768px ----------> */
+
+  .banner-image {
+    background-image: url('../../img/imgZrum/header-md.png');;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* <---------- main section 768px ----------> */
+
+ 
+
+  /* <---------- exclusive packages section 768px ----------> */
+
+  #exclusive-packs {
+
+    align-self: flex-start;
+    order: 1;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #exclusive-packs h1 {
+    margin-right: auto;
+  }
+
+  .pack1 {
+    width: 90%;
+  }
+
+  .pack1 h2,
+  .pack1 p {
+    margin-right: auto;
+  }
+
+  .pack1-img {
+    width: 100%;
+  }
+
+  .container-packs {
+    justify-content: space-between;
+  }
+
+
+  .pack2,
+  .pack3 {
+    width: 180px;
+    margin: 12px 0;
+  }
+
+  .pack2 img,
+  .pack3 img {
+    width: 180px;
+  }
+
+  .pack-md {
+    display: flex;
+  }
+
+
+  /* <---------- sponsors section 768px ----------> */
+
+  #sponsors {
+    max-height: 63px;
+    min-height: 63px;
+
+    order: 3;
+  }
+
+  /* <---------- aside section 768px ----------> */
+
+  aside {
+    text-align: left;
+
+    order: 2;
+    align-self: flex-start;
+  }
+
+  .others-seen-box {
+    width: 100%;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .others-seen-box img {
+    margin-top: 0 !important;
+    max-height: 80%;
+    width: 50%;
+
+  }
+
+  .others-seen-info {
+    background-color: white;
+    bottom: 0;
+    width: 50%;
+    height: auto;
+
+  }
+
+  .others-seen-info p {
+    color: #ffa025;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .others-seen-info span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 7px;
+    display: block;
+  }
+
+  .others-seen-hidden {
+    display: none;
+  }
+
+  .benefits {
+    margin-top: 22px;
+    max-width: 300px;
+    height: 351px;
+
+    flex-flow: column;
+  }
+
+  .benefit-box {
+    border: 0px solid white;
+    height: 87px;
+    width: 100%;
+  }
+
+  .benefit-left,
+  .benefit-right {
+    border-bottom: 1px solid white;
+  }
+
+  /* <---------- new experiences section 768px ----------> */
+
+  .new-experiences {
+    margin-bottom: 38px;
+    width: 100%;
+
+    order: 4;
+  }
+
+  .new-exp-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .btn-new-exp {
+    margin-top: 75px;
+  }
+
+  /* <---------- newsletter and recommendations section 768px ----------> */
+
+  .news-recom-container {
+    height: 175px;
+    order: 5;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+  }
+
+  .recommendations {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+  }
+
+  .recom-box {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .recom-img {
+    background-color: #fff;
+    border-radius: 100%;
+    height: 54.9px;
+    margin-right: 12px;
+    width: 54.9px;
+  }
+
+  .recom-cart {
+    height: 100px;
+    width: 200px;
+    overflow-y: hidden;
+
+  }
+
+  .recom-name,
+  .recom-testimony {
+    max-width: 100%;
+  }
+
+  .recom-box img {
+    height: 25px;
+    margin-left: 30px;
+    width: 11px;
+
+    align-self: center;
+  }
+
+  /* <---------- footer section 768px ----------> */
+
+  footer {
+    order: 6;
+  }
+
+  .f-menu-container {
+    flex-wrap: nowrap;
+  }
+
+  .payment-options img{
+    width: 80%;
+  }
+
+  .certified {
+    top: 55%;
+  }
+
+  /* .language-currency {
+    top: 55%;
+  } */
+
+  /* <---------- productDetail  768px ----------> */
+
+
+  .title-main span {
+    display: block;
+
+    color: #fff;
+    font-size: 10px;
+    height: 12px;
+    line-height: 15px;
+
+    position: absolute;
+    left: 0;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  /* <---------- header section 992px ----------> */
+
+  .banner-image {
+    background-image: url('../../img/imgZrum/header-lg.png');
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* <---------- exclusive packages section 992px ----------> */
+
+  .pack2,
+  .pack3 {
+    height: 189px;
+    width: 30%;
+
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .pack2 img,
+  .pack3 img {
+    width: 100%;
+  }
+
+  .pack-info {
+    background-color: #fff;
+    bottom: 0;
+    text-align: left;
+  }
+
+  .pack-info p {
+    color: #2379ac;
+    margin: 0;
+  }
+
+
+  .pack-lg {
+    display: flex;
+  }
+
+  /* <---------- aside section 992px ----------> */
+
+  hr {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .others-seen-info {
+    width: 40%;
+  }
+
+  .others-seen-info p {
+    margin-left: 25px;
+  }
+
+  .others-seen-info span {
+    margin-left: 25px;
+  }
+
+  .others-seen-hidden {
+    display: flex;
+  }
+
+  .benefit-box {
+    width: 100%;
+  }
+
+  /* <---------- new experiences section 992px ----------> */
+
+  .new-exp-container {
+    width: 100%;
+  }
+
+  .new-exp-box {
+    height: 228px;
+    width: 22%;
+  }
+
+  .new-exp-box h2 {
+    bottom: 0px;
+  }
+
+  .new-exp-box span,
+  .new-exp-box button {
+    display: none;
+  }
+
+  .exp-003,
+  .exp-004{
+    display: block !important;
+  }
+
+  .new-exp-box:hover {
+    border: solid 0 1px 1px 0 #dedede;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);
+  }
+
+  .new-exp-box img:hover~button,
+  .new-exp-box h2:hover~button {
+    display: block;
+    border: solid 0 1px 1px 0 #dedede;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);
+  }
+
+  /* <---------- newsletter and recommendations section 992px ----------> */
+
+  .newsletter form input {
+    width: 300px !important;
+  }
+
+  .newsletter form button {
+    width: 150px;
+  }
+
+  .newsletter p {
+    text-align: left;
+    width: 450px !important;
+  }
+
+  .recom-cart {
+    width: 250px;
+  }
+
+  /* <---------- footer section 992px ----------> */
+
+  .payment-options img{
+    width: 60%;
+  }
+
+  .certified {
+   left: 49%;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* <---------- footer section 1200px ----------> */
+
+  .payment-options img{
+    width: 40%;
+  }
+
+  .certified {
+    left: 50%;
+  }
+}
