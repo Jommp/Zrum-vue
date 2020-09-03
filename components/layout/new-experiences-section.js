@@ -14,7 +14,7 @@ const NewExperiences = {
                 :alt="product.imgs[0].alt"
               >
               <h2>{{ product.name }}</h2>
-              <button class="btn-quote"><span>Más de 326</span> <br> CENOTES</button>
+              <button><span></span> CENOTES</button>
             </a>
           </div>
   
@@ -22,7 +22,7 @@ const NewExperiences = {
             <a href="#">
               <img src="./img/islas-marietas-vallarta.png" alt="Islas Marietas Vallarta">
               <h2>VALLARTA</h2>
-              <button><span>Más de 326</span> <br> CENOTES</button>
+              <button><span></span> CENOTES</button>
             </a>
           </div>
   
@@ -38,7 +38,7 @@ const NewExperiences = {
             <a href="#">
               <img src="./img/islas-marietas-vallarta.png" alt="Islas Marietas Vallarta">
               <h2>VALLARTA</h2>
-              <button><span>Más de 326</span> <br> CENOTES</button>
+              <button class=""> CENOTES</button>
             </a>
           </div>
         </div>

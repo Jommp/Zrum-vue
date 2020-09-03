@@ -8,7 +8,7 @@
 .summary-content h1{
   border-bottom: 1px solid #2379ac;
   color: #ffa025;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 800;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
@@ -19,7 +19,7 @@
 }
 .summary-content .group > p{
   margin-bottom: 0.5rem;
-  font-size: 14px;
+  font-size: .9rem;
 }
 .summary-content .group > p.item{
   width: 25%;
@@ -34,7 +34,7 @@
   padding-top: 10px;
 }
 .summary-content .total-md p{
-  font-size: 22px !important;
+  font-size: 1.4rem !important;
 }
 .form-area .subtitle{
   color: #2379ac;

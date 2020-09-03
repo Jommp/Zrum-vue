@@ -1,7 +1,5 @@
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
-  /* <---------- history section 576px ----------> */
   
 
   /* <---------- members section 576px ----------> */
@@ -18,11 +16,6 @@
   .member-box img {
     max-width: 115px;
     max-height: 115px;
-  }
-
-  .member-info h2 {
-    font-size: 10px;
-    line-height: 14px;
   }
 
   /* <---------- sponsors section 576px ----------> */
@@ -48,7 +41,6 @@
   .history-text {
     height: 300px;
     overflow: hidden;
-    text-align: left !important;
     width: 40%;
   }
 
@@ -71,11 +63,6 @@
     max-height: 156px;
   }
 
-  .member-info h2 {
-    font-size: 10px;
-    line-height: 14px;
-  }
-
   /* <---------- sponsors section 768px ----------> */
 
   #sponsors {
@@ -96,14 +83,10 @@
     height: auto;
     margin-bottom: 8%;
     max-width: 430px;
-    text-align: left;
   }
 
   /* <---------- members section 768px ----------> */
   
-  .member-info h2{
-    font-size: 14px;
-  }
 
   /* <---------- sponsors section 992px ----------> */
 

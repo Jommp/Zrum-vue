@@ -144,7 +144,7 @@ const BookingWidget = {
             <label for="product-dt">Elige una fecha:</label>
             <b-form-datepicker 
               id="product-dt" 
-              placeholder="Elige fecha"
+              placeholder=""
               v-model="dtStart"  
               class="mb-2"
               locale="es-MX"
@@ -158,7 +158,7 @@ const BookingWidget = {
             <label for="arrive-tm">Elige un horario:</label>
             <b-form-timepicker 
               id="product-tm" 
-              placeholder="Elige hora" 
+              placeholder="" 
               v-model="tmStart" 
               locale="es"
               required>

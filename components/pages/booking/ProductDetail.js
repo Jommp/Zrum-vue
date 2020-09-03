@@ -245,11 +245,11 @@ const ProductDetail = {
 
     <InstitutionLogosBanner></InstitutionLogosBanner>
 
-    <MainFooter :contactInfo="contactInfo" 
-                :links="links"
-                :viewportSize="viewportSize"
-                :minMDViewport="minMDViewport">
-    </MainFooter>
+      <MainFooter :contactInfo="contactInfo" 
+        :links="links"
+        :viewportSize="viewportSize"
+        :minMDViewport="minMDViewport">
+      </MainFooter>
   </div>
   `,
   data() {
@@ -290,8 +290,10 @@ const ProductDetail = {
   },
   mounted() {
     //this.getProduct();
+    //Cambiartamaño
     window.addEventListener('resize', this.handleResize)
     this.handleResize();
+
     this.$root.$on('selectorChanged', (selected) => {
       this.handleSelectorChange(selected);
     });
@@ -313,6 +315,7 @@ const ProductDetail = {
       console.log(this.currentLang);
       //TODO: change language values
     },
+    //Cambiartamaño
     handleResize() {
       this.windowW = window.innerWidth;
     },

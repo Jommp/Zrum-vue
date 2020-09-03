@@ -26,9 +26,9 @@ const MainFooter = {
             </li>
           </ul>
         </div>
-        <!-- SIGUENOS SM-->
-        <div v-if="viewportSize == 'SM' || viewportSize == 'MD' || viewportSize == 'LG' 
-        || viewportSize == 'XL'" class="col-sm-4 pr-md-5">
+        <!-- SIGUENOS SM v-if="viewportSize == 'SM' || viewportSize == 'MD' || viewportSize == 'LG' 
+        || viewportSize == 'XL'"-->
+        <div v-showon.sm.md.lg.xl class="col-sm-4 pr-md-5">
           
           <div class="social-net-area text-left">
             <p class="title text-left text-sm-center">Síguenos</p>
@@ -67,14 +67,13 @@ const MainFooter = {
             </div>
           </div>
 
-          <!-- CERTIFICADO SSL-->
-          <div v-if="viewportSize == 'XS'" class="ssl-area text-center mt-3">
+          <!-- CERTIFICADO SSL  v-if="viewportSize == 'XS'"-->
+          <div v-showon.xs class="ssl-area text-center mt-3">
             <img src="./img/imgZrum/ssl-certified.png" height="40">
           </div>
 
-          <!-- SELECTORES -->
-          <div v-if="viewportSize == 'SM' || viewportSize == 'MD' || viewportSize == 'LG' 
-            || viewportSize == 'XL'" class="mt-3 mt-md-4">
+          <!-- SELECTORES v-if="viewportSize == 'SM' || viewportSize == 'MD' || viewportSize == 'LG' || viewportSize == 'XL'"-->
+          <div v-showon.sm.md.lg.xl class="mt-3 mt-md-4">
 
             <div class="language-currency text-center my-auto">
 
@@ -93,8 +92,8 @@ const MainFooter = {
             </div>
           </div>
         </div>
-
-        <div v-if="viewportSize == 'XS'"class="col-12 col-md-4 col-lg-3 col-xl-3 mt-3" id="more">        
+       <!--  v-if="viewportSize == 'XS'" -->
+        <div v-showon.xs class="col-12 col-md-4 col-lg-3 col-xl-3 mt-3" id="more">        
           <div class="row">
             <!-- REDES SOCIALES -->
             <div class="social-net-area col col-md-12 text-center text-lg-left d-flex justify-content-center">
@@ -119,14 +118,14 @@ const MainFooter = {
                 </a>
               </div>
             </div>
-            <!-- CERTIFICADO SSL -->
-            <div v-if="minMDViewport" class="ssl-area col-6 col-md-12 text-center text-lg-left mt-md-4">
+            <!-- CERTIFICADO SSL v-if="minMDViewport" -->
+            <div v-showon.md.lg.xl class="ssl-area col-6 col-md-12 text-center text-lg-left mt-md-4">
               <img src="./img/imgZrum/ssl-certified.png" height="40">
             </div>
 
           </div>
-          <!-- SELECTORES -->
-          <div v-if="!minMDViewport" class="row">
+          <!-- SELECTORES v-if="!minMDViewport"-->
+          <div v-showon.xs.sm class="row d-flex">
             <div class="language-currency mt-3 mx-auto">
 
               <select name="language" id="language-select">

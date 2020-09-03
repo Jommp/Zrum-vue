@@ -23,12 +23,12 @@ const PaymentForm = {
 
       <div class="form-group col-12 col-md-6 col-lg-12">
         <label for="name">Nombre (s) *</label> 
-        <input type="text" id="name" placeholder="" v-model="name" class="form-control" required>
+        <input type="text" id="name" placeholder="" v-model="name" class="form-control">
       </div> 
 
       <div class="form-group col-12 col-md-6 col-lg-12">
         <label for="lastname">Apellido (s) *</label> 
-        <input type="text" id="lastname" placeholder="" v-model="lastname" class="form-control" required>
+        <input type="text" id="lastname" placeholder="" v-model="lastname" class="form-control">
       </div>
 
     </div>
@@ -37,13 +37,13 @@ const PaymentForm = {
       
       <div class="form-group col-12 col-lg-12">
         <label for="email">Correo electrónico *</label>
-        <input type="email" id="email" placeholder="" v-model="email" class="form-control" required>
+        <input type="email" id="email" placeholder="" v-model="email" class="form-control">
       </div>
 
         <div v-if="!minMDViewport" class="form-group col-12 col-lg-12">
           <label for="phone" class="d-block">Número de celular *</label>
-          <input type="tel" id="lada" placeholder="" v-model="lada" class="form-control w-25 d-inline-block" required>
-          <input type="tel" id="phone" placeholder="" v-model="phone" class="form-control d-inline-block" required>
+          <input type="tel" id="lada" placeholder="" v-model="lada" class="form-control w-25 d-inline-block">
+          <input type="tel" id="phone" placeholder="" v-model="phone" class="form-control d-inline-block">
         </div>
 
     </div>
@@ -74,13 +74,13 @@ const PaymentForm = {
 
       <div v-if="minMDViewport" class="form-group col-6">
         <label for="phone" class="d-block">Número de celular *</label>
-        <input type="tel" id="lada" placeholder="" v-model="lada" class="form-control w-25 d-inline-block" required>
-        <input type="tel" id="phone" placeholder="" v-model="phone" class="form-control d-inline-block" required>
+        <input type="tel" id="lada" placeholder="" v-model="lada" class="form-control w-25 d-inline-block" >
+        <input type="tel" id="phone" placeholder="" v-model="phone" class="form-control d-inline-block" >
       </div>
 
       <div class="form-group col-12 col-sm-8 col-md-6 mt-2 mt-lg-0 ">
 
-        <label for="country">Elige un método de pago *</label>
+        <label for="">Elige un método de pago *</label>
 
         <div class="d-flex justify-content-around payment-method-container ">
 
@@ -188,12 +188,24 @@ const PaymentForm = {
         isValid = false;
       }
       if (!this.email) {
-        this.errors.push('El campo "Email" es requerido.');
+        this.errors.push('El campo "Correo electrónico" es requerido.');
         isValid = false;
       } else if (!this.validEmail(this.email)) {
-        this.errors.push('El campo "Email" tiene formato incorrecto.');
+        this.errors.push('El campo "Correo electrónico" tiene formato incorrecto.');
         isValid = false;
       }
+      if (!this.country) {
+         this.errors.push('El campo "Pais" es requerido.');
+         isValid = false;
+      }
+      if (!this.city) {
+         this.errors.push('El campo "Ciudad" es requerido.');
+         isValid = false;
+      }
+      if (!this.lada) {
+         this.errors.push('El campo "Lada" es requerido.');
+         isValid = false;
+       }
       if (!this.phone) {
         this.errors.push('El campo "Telefono" es requerido.');
         isValid = false;

@@ -26,7 +26,8 @@ const AboutPage = {
 
         <section class="history mx-sm-auto"
           <div class="container mt-4">
-            <div class="row justify-content-center pb-3 justify-content-md-start">
+            <div v-if="viewportSize == 'XS' || viewportSize == 'SM' || viewportSize == 'MD'" 
+            class="row justify-content-center pb-3 justify-content-md-start">
               <h2 class="ml-md-5">NUESTRA HISTORIA</h2>
             </div>
             <div class="row flex-md-row-reverse">
@@ -35,15 +36,21 @@ const AboutPage = {
                 <img class="small-img position-absolute img-fluid" src="./img/imgZrum/small-image.png" alt="">
                 <img class="big-img img-fluid ml-auto" src="./img/imgZrum/big-image.png" alt="">
               </div>
-              <p class="text-center px-3 mt-lg-3 history-text">Lorem ipsum dolor sit amet consectetur adipiscing elit quam dapibus, est ut class facilisi
-                vehicula facilisis porttitor suscipit, pharetra interdum accumsan nunc sagittis faucibus elementum magnis. Inceptos laoreet
-                tristique iaculis sem elementum porttitor luctus netus dapibus eleifend nam porta, dignissim sodales nibh
-                nuncrhoncus neque viverra cursus pellentesque magnis praesent, urna eget nascetur nisi donec hendrerit imperdiet
-                nullam phasellus fames natoque. Consequat dis mollis etiam potenti gravida nisi sem integer auctor, sagittis
-                arcu est luctus eu id ad conubia sapien, ut ligula ridiculus natoque tincidunt interdum praesent cum. Hac
-                natoque ante convallis semper malesuada pretium magnis non fusce blandit, praesent sodales taciti porttitor
-                rhoncus curae varius suspendisse.
-              </p>
+              <div class="mt-lg-3 my-lg-auto history-text">
+                <h2 v-if="viewportSize == 'LG' || viewportSize == 'XL'" 
+                class="pb-5 text-center">NUESTRA HISTORIA</h2>
+                <p class="text-justify px-3">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit quam dapibus, est ut class facilisi
+                  vehicula facilisis porttitor suscipit, pharetra interdum accumsan nunc sagittis faucibus elementum magnis. Inceptos laoreet
+                  tristique iaculis sem elementum porttitor luctus netus dapibus eleifend nam porta, dignissim sodales nibh
+                  nuncrhoncus neque viverra cursus pellentesque magnis praesent, urna eget nascetur nisi donec hendrerit imperdiet
+                  nullam phasellus fames natoque. Consequat dis mollis etiam potenti gravida nisi sem integer auctor, sagittis
+                  arcu est luctus eu id ad conubia sapien, ut ligula ridiculus natoque tincidunt interdum praesent cum. Hac
+                  natoque ante convallis semper malesuada pretium magnis non fusce blandit, praesent sodales taciti porttitor
+                  rhoncus curae varius suspendisse.
+                </p>
+              </div>
+              
             </div>
           </div>
         </section>
@@ -146,6 +153,10 @@ const AboutPage = {
     })
     this.packs = this.getPacks;
     this.exps = this.getExps;
+
+    //change size
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize();
   },
   components: { 
                 ProductItem,
@@ -208,6 +219,7 @@ const AboutPage = {
       const link = this.links.find(link => link.id == 'productDetail');
       return link.url + `?id=${productId}`;
     },
+    //change size
     handleResize() {
       this.windowW = window.innerWidth;
     }

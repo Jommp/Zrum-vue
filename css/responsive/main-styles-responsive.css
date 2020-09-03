@@ -76,12 +76,12 @@
   /* <---------- footer section 576px ----------> */
 
   footer ul li {
-    font-size: 14px;
+    font-size: .9rem;
     text-align: left;
   }
 
   .footer-box h2 {
-    font-size: 16px;
+    font-size: 1rem;
 
   }
 
@@ -105,7 +105,6 @@
   }
 
   .social-networks {
-    order: 3;
 
     flex-flow: column;
     justify-content: flex-start;
@@ -133,7 +132,7 @@
   }
 
   .f-menu-container li {
-    font-size: 12px;
+    font-size: .8rem;
   }
 
 }
@@ -166,10 +165,6 @@
 
   #exclusive-packs h1 {
     margin-right: auto;
-  }
-
-  .pack1 {
-    width: 90%;
   }
 
   .pack1 h2,
@@ -245,7 +240,7 @@
 
   .others-seen-info p {
     color: #ffa025;
-    font-size: 13px;
+    font-size: .85rem;
     font-weight: bold;
     margin-left: 7px;
     margin-bottom: 10px;
@@ -253,7 +248,7 @@
   }
 
   .others-seen-info span {
-    font-size: 14px;
+    font-size: .9rem;
     font-weight: bold;
     margin-left: 7px;
     display: block;
@@ -381,7 +376,7 @@
     display: block;
 
     color: #fff;
-    font-size: 10px;
+    font-size: .65rem;
     height: 12px;
     line-height: 15px;
 
@@ -497,6 +492,7 @@
     border: solid 0 1px 1px 0 #dedede;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);
   }
+
 
   /* <---------- newsletter and recommendations section 992px ----------> */
 

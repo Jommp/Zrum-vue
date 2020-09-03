@@ -19,7 +19,7 @@
 /* LG */
 @media (min-width: 992px) {
   .summary-content h1{
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .large-form #submit-btn{
     max-width: 420px;

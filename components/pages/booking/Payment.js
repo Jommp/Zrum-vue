@@ -74,7 +74,7 @@ const Payment = {
 
         <div class="row">
 
-          <div class="col-6 py-4">
+          <div class="col-8 py-4">
 
             <h2 class="text-center subtitle mb-3 mb-sm-4">Completa para continuar con tu pago</h2>
             <PaymentForm 
@@ -84,7 +84,7 @@ const Payment = {
             
           </div>
 
-          <div class="col-6 py-2">
+          <div class="col-4 py-2">
             <h2 class="text-center mt-4 form-quote">¡Asegura tu reservación!</h2>
             <BookWithUsSection 
               :benefits="benefits"

@@ -10,7 +10,7 @@
   /* <---------- form section 576px ----------> */
 
   .contact-form {
-    width: 90%;
+    width: 100%;
   }
 
   .contact-form form textarea {
@@ -61,7 +61,7 @@
     display: block;
 
     color: #fff;
-    font-size: 10px;
+    font-size: .65rem;
     height: 12px;
     line-height: 15px;
 

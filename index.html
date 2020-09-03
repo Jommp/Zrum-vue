@@ -1,66 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
-    
-    <!-- Load polyfills to support older browsers -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
-    
-    <!-- Load Vue followed by BootstrapVue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <!--for production:
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+   <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+
+   <!-- Load polyfills to support older browsers -->
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous">
+   </script>
+
+   <!-- Load Vue followed by BootstrapVue -->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <!--for production:
       <script src="https://unpkg.com/vue@latest/dist/vue.min.js"></script>
     -->
-    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/responsive/general-responsive.css">
-    <link rel="stylesheet" href="./css/main-styles.css">
-    <link rel="stylesheet" href="./css/responsive/main-styles-responsive.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
- 
-    <script src="https://unpkg.com/vue-select@latest"></script>
-    <link rel="stylesheet" href="https://unpkg.com/vue-select@latest/dist/vue-select.css">
+   <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/general.css">
+   <link rel="stylesheet" href="./css/responsive/general-responsive.css">
+   <link rel="stylesheet" href="./css/main-styles.css">
+   <link rel="stylesheet" href="./css/responsive/main-styles-responsive.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+   <script src="https://unpkg.com/vue-select@latest"></script>
+   <link rel="stylesheet" href="https://unpkg.com/vue-select@latest/dist/vue-select.css">
 
 
-    <title>Agency Name | Inicio</title>
-  </head>
-  <body>
-    <div class="main-container" id="home">
+   <title>Agency Name | Inicio</title>
+</head>
+
+<body>
+   <div class="main-container" id="home">
       <home-page></home-page>
-    </div>
+   </div>
 
-    <script src="./scripts/content.js"></script>
+   <script src="./scripts/content.js"></script>
+   <script src="./scripts/resize.js"></script>
 
-    <script src="./components/general/selector.js"></script>
-    <script src="./components/general/product-item.js"></script>
-    <script src="./components/general/color-box.js"></script>
+   <script src="./components/general/selector.js"></script>
+   <script src="./components/general/product-item.js"></script>
+   <script src="./components/general/color-box.js"></script>
 
-    <script src="./components/layout/institution-logos-banner.js"></script>
-    <script src="./components/layout/main-header.js"></script>
-    <script src="./components/layout/main-footer.js"></script>
-    <script src="./components/layout/exclusive-packs.js"></script>
-    <script src="./components/layout/main-aside.js"></script>
-    <script src="./components/layout/main-newsletter.js"></script>
-    <script src="./components/layout/benefits-section.js"></script>
+   <script src="./components/layout/institution-logos-banner.js"></script>
+   <script src="./components/layout/main-header.js"></script>
+   <script src="./components/layout/main-footer.js"></script>
+   <script src="./components/layout/exclusive-packs.js"></script>
+   <script src="./components/layout/main-aside.js"></script>
+   <script src="./components/layout/main-newsletter.js"></script>
+   <script src="./components/layout/benefits-section.js"></script>
 
-    <script src="./components/pages/Home.js"></script>
-    
-    <script>
+   <script src="./components/pages/Home.js"></script>
+
+   <script>
       Vue.component('v-select', VueSelect.VueSelect);
 
       new Vue({
-        el: '#home',
-        components: { 'home-page': HomePage }
+         el: '#home',
+         components: {
+            'home-page': HomePage
+         }
       });
-    </script>
-    
-  </body>
+   </script>
+
+</body>
+
 </html>

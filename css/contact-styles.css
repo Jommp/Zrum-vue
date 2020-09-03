@@ -17,6 +17,8 @@
 /* <---------- form section ----------> */
 
 .contact-form {
+  width: 90%;
+  
   flex-flow: column;
   align-items: center;
 }
@@ -30,7 +32,7 @@
 
 .contact-form form {
   margin-top: 35px;
-  width: 90%;
+  width: 100%;
 
   flex-flow: column wrap;
   align-items: center;

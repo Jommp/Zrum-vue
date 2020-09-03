@@ -2,20 +2,20 @@
 .product-title {
   color: #ffa025;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .product-title > span{
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #2379ac;
   margin-left: 0.5rem;
 }
 .product-prices p{
-  font-size: 18px !important;
+  font-size: 1.15rem !important;
 }
 .product-prices .discount{
   color: #ff0000;
-  font-size: 12px;
+  font-size: .8rem;
   text-decoration: line-through;
 }
 .product-specifications .accordion_card{
@@ -59,9 +59,9 @@
 }
 .product-specifications p{
   color: #2379ac;
-  font-size: 14px;
+  font-size: .9rem;
 }
 .product-specifications p.description{
-  font-size: 16px;
+  font-size: 1rem;
 }
 /***** ./Booking Step 1 *****/

@@ -5,13 +5,13 @@ const ColorBox = {
     :class="color"
     @mouseover="isHover = true"
     @mouseleave="isHover = false"
-    class="box pl-2 py-4 pl-lg-4 d-flex align-items-center align-items-sm-start align-items-md-center 
-    justify-content-lg-start justify-content-around h-100">
+    class="box py-4 d-flex align-items-center align-items-sm-start align-items-md-center 
+    justify-content-around h-100">
 
     <template v-if="!isHover || isLgViewport">
 
-      <div class="text text-left">
-        <p class="title mb-0 mb-lg-1">{{title}}</p>
+      <div class="text text-center mx-auto">
+        <p class="title mb-0 mb-lg-1 mx-auto">{{title}}</p>
         
       </div>
 

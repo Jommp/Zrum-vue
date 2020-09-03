@@ -53,7 +53,7 @@ const HomePage = {
         <div class="container px-0 text-center">
           <h1 class="text-uppercase text-center">Nuevas Experiencias</h1>
           <div class="row w-100 mx-auto">
-            <div class="new-exp-container mx-md-auto">
+            <div class="new-exp-container mx-auto">
               <div 
                 v-for="(prod, index) in exps"
                 :key="prod.id"
@@ -111,6 +111,10 @@ const HomePage = {
     })
     this.packs = this.getPacks;
     this.exps = this.getExps;
+
+    //change size
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize();
   },
   components: { 
                 ProductItem,
@@ -174,6 +178,7 @@ const HomePage = {
       const link = this.links.find(link => link.id == 'productDetail');
       return link.url + `?id=${productId}`;
     },
+    //change size
     handleResize() {
       this.windowW = window.innerWidth;
     }

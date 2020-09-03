@@ -6,7 +6,7 @@ const ProductItem = {
       :src="product.imgs[0].src"
       :alt="product.imgs[0].alt">
     <h2>{{ product.name }}</h2>
-    <button class="btn-quote"><span>Más de 326</span> <br> CENOTES</button>
+    <button class=""><span>Más de 326</span> CENOTES</button>
   </div>
   `,
   filters: {

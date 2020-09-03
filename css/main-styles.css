@@ -25,21 +25,21 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 29px;
   font-weight: bold;
 }
 
 h2 {
   color: #ffa025;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.22;
   margin-top: 4px;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold !important;
   line-height: 1.5;
   text-align: center;
@@ -92,7 +92,7 @@ header {
 
 .banner-data p {
   color: white;
-  font-size: 13px;
+  font-size: .85rem;
   font-weight: bold;
   line-height: 16px;
   margin-bottom: 0 !important;
@@ -141,7 +141,7 @@ header {
 
 .pack1 p {
   color: #2379ac;
-  font-size: 13px;
+  font-size: .85rem;
   line-height: 22px;
   margin-bottom: 0;
 }
@@ -195,7 +195,7 @@ header {
 
 .pack-info p {
   color: white;
-  font-size: 13px;
+  font-size: .85rem;
 }
 
 .pack3 {
@@ -213,7 +213,7 @@ header {
   border-width: 0;
   color: white;
   border-radius: 18px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   height: 35px;
   margin-top: 19px;
@@ -249,7 +249,7 @@ aside {
 
 aside p {
   font-family: 'Century Gothic';
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -298,7 +298,7 @@ hr {
 .others-seen-info p {
   color: white;
   font-family: 'Century Gothic';
-  font-size: 13px;
+  font-size: .85rem;
   line-height: 18px;
 }
 
@@ -347,7 +347,7 @@ hr {
 .benefit-box a {
   color: white;
   font-family: 'Poppins Medium';
-  font-size: 13px;
+  font-size: .85rem;
   font-weight: 500;
 }
 
@@ -387,7 +387,7 @@ hr {
 .new-exp-box h2 {
   color: #ffffff;
   font-family: 'Century Gothic';
-  font-size: 30px;
+  font-size: 1.9rem;
   font-weight: bold;
   line-height: 1;
   text-align: center;
@@ -402,16 +402,17 @@ hr {
   border-width: 0;
   color: #fff;
   font-family: 'Century Gothic';
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
-  height: 44px;
+  height: 50px;
   line-height: 1.25;
   width: 100%;
 }
 
 .new-exp-box span {
+  display: block;
   font-family: 'Century Gothic';
-  font-size: 13px;
+  font-size: .85rem;
   font-weight: 400;
   line-height: 1.69;
   color: #ffffff;
@@ -422,7 +423,7 @@ hr {
   border-width: 0;
   color: white;
   border-radius: 18px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   height: 35px;
   margin-top: 50px;
@@ -448,7 +449,7 @@ hr {
 .newsletter h2,
 .recommendations h2 {
   font-family: 'Century Gothic';
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 1.25;
   color: #fff;
@@ -473,7 +474,7 @@ hr {
 .newsletter form input::placeholder {
   color: #365067;
   font-family: 'Century Gothic';
-  font-size: 13px;
+  font-size: .85rem;
   line-height: 1.23;
   padding: 10px 0 10px 27px;
 }
@@ -492,7 +493,7 @@ hr {
 .newsletter p,
 .recom-cart p {
   font-family: 'Century Gothic';
-  font-size: 13px;
+  font-size: .85rem;
   line-height: 1.23;
 }
 
@@ -512,60 +513,21 @@ footer {
   color: #365067;
   width: 100%;
 }
-
-.footer-box {
-  text-align: center;
-}
-
 .footer-box h2 {
   color: #365067;
   font-family: 'Century Gothic';
-  font-size: 13px;
+  font-size: .85rem;
   font-weight: bold;
   line-height: 24px;
-
 }
-
-footer ul {
-  padding: 0;
-}
-
-footer ul li {
-  font-size: 12px;
-  list-style: none;
-  text-align: center;
-}
-
 footer ul li a {
   color: #365067;
 }
-
 footer a:hover {
   text-decoration: none #2379ac !important;
   font-weight: bold;
 }
 
-.payment-options h2,
-.payment-options img {
-  margin-right: 5px;
-}
-
-.payment-options img{
-  width: 100%;
-}
-.certified {
-  left: 75%;
-  top: 35%;
-}
-
-.social-networks {
-  justify-content: center;
-  align-items: center;
-}
-
-.language-currency {
-  justify-content: center;
-}
 
 .language-currency select {
   background-color: transparent;
@@ -573,19 +535,11 @@ footer a:hover {
   border: solid 1px #365067;
   color: #365067;
   font-family: 'Poppins Medium';
-  font-size: 12px;
+  font-size: .75rem;
   height: 32px;
   width: 58px;
 }
 
-.f-menu-container {
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.f-menu-container li {
-  font-size: 10px;
-}
 
 /* <---------- productDetail  ----------> */
 .title-main {
@@ -595,7 +549,7 @@ footer a:hover {
 
 .title-main h2 {
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 29px;
 }
 
